@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The GAME</title>
+    <meta name="Game" content="The HTML5 Herald">
+    <meta name="Mateusz" content="Game">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+    <canvas id="c"></canvas>
+    <div class="container" id="container">
+        <button id="startbtn" onclick="start()">Start Game</button>
+
+        <div id="object" onclick="addPoints()"></div>
+        <div id="errorText">You lose</div>
+        <div class="hud" id="hud1">
+            <div id="scoreElement">
+                <h id="scoreText">SCORE: </h2>
+                    <p id="score">0</p>
+            </div>
+            <div class="health" id="hearts">
+                <div class="hearts"><img src="heart.svg"></div>
+                <div class="hearts"><img src="heart.svg"></div>
+                <div class="hearts"><img src="heart.svg"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>
